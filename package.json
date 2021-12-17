@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nabilshaikh/cypress-demoqa-tests/issues"
   },
-  "homepage": "https://github.com/nabilshaikh/cypress-demoqa-tests#readme"
+  "homepage": "https://github.com/nabilshaikh/cypress-demoqa-tests#readme",
+  "devDependencies": {
+    "cypress": "^9.1.1"
+  }
 }
