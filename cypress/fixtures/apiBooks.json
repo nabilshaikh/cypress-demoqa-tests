@@ -1,0 +1,26 @@
+{
+  "books": [
+    {
+      "isbn": "9781449325862",
+      "title": "Cypress Pocket Guide",
+      "subTitle": "Cypress Working Introduction",
+      "author": "Nabil Shaikh",
+      "publish_date": "2020-06-04T08:48:39.000Z",
+      "publisher": "Bombay Publications",
+      "pages": 234,
+      "description": "This pocket guide is the perfect on-the-job companion to Cypress",
+      "website": "https://www.cypress.io/"
+    },
+    {
+      "isbn": "9781449325863",
+      "title": "TypeScript Pocket Guide",
+      "subTitle": "TypeScript Working Introduction",
+      "author": "Jiao Zhang",
+      "publish_date": "2020-06-04T08:48:39.000Z",
+      "publisher": "Endowus Publications",
+      "pages": 300,
+      "description": "A pocket guide to typescript",
+      "website": "https://www.typescriptlang.org/"
+    }
+  ]
+}
