@@ -1,3 +1,5 @@
+/* eslint-disable global-require */
+/* eslint-disable import/no-extraneous-dependencies */
 /// <reference types="cypress" />
 // ***********************************************************
 // This example plugins/index.js can be used to load plugins
@@ -16,7 +18,7 @@
  * @type {Cypress.PluginConfig}
  */
 
- export default (on, config) => {
+export default (on, config) => {
   // config cucumber
   const cucumber = require('cypress-cucumber-preprocessor').default;
   const browserify = require('@cypress/browserify-preprocessor');
