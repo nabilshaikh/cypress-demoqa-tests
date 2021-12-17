@@ -1,11 +1,14 @@
 {
   "testFiles": "**/*.{feature,features}",
-  "baseUrl": "https://google.com/",
+  "baseUrl": "https://demoqa.com",
   "pluginsFile": "cypress/plugins/index.js",
   "chromeWebSecurity": false,
   "pageLoadTimeout": 20000,
   "defaultCommandTimeout": 10000,
   "video": false,
   "viewportWidth": 1280,
-  "viewportHeight": 800
+  "viewportHeight": 800,
+  "env": {
+    "BOOKS_SERVICE": "https://demoqa.com/BookStore/v1/Books"
+  }
 }
