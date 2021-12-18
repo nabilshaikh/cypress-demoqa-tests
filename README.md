@@ -44,7 +44,6 @@ Once the execution is complete, this is how the test report would look like,
 <ins>HTML</ins>: 
 
 <img width="1439" alt="html-report" src="https://user-images.githubusercontent.com/58862186/146646772-11b7c386-7d4c-4052-b905-7d8aa72bdcd0.png">
-<br></br>
 
 # (A) Testing strategy
 
