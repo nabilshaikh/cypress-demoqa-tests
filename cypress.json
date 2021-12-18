@@ -5,10 +5,23 @@
   "chromeWebSecurity": false,
   "pageLoadTimeout": 20000,
   "defaultCommandTimeout": 10000,
+  "requestTimeout": 15000,
+  "responseTimeout": 15000,
+  "execTimeout": 20000,
   "video": false,
   "viewportWidth": 1280,
   "viewportHeight": 800,
   "env": {
     "BOOKS_SERVICE": "https://demoqa.com/BookStore/v1/Books"
+  },
+  "retries": 1,
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/reports",
+    "reportFilename": "test-report",
+    "overwrite": false,
+    "html": true,
+    "json": true,
+    "charts": true
   }
 }
