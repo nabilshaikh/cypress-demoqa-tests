@@ -6,8 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "cypress open",
-    "cy:run": "cypress run",
-    "lint": "eslint --fix --ext .js,.vue,.ts --ignore-path .gitignore ."
+    "cy:run": "npm run delete:report && cypress run && npm run test:report",
+    "lint": "eslint --fix --ext .js,.vue,.ts --ignore-path .gitignore .",
+    "merge:report": "mochawesome-merge cypress/reports/*.json > cypress/reports/testReport.json",
+    "generate:report": "marge cypress/reports/testReport.json --reportDir ./ --inline",
+    "test:report": "npm run merge:report && npm run generate:report",
+    "delete:report":"rm cypress/reports/* || true"
   },
   "repository": {
     "type": "git",
@@ -26,7 +30,9 @@
     "@cypress/browserify-preprocessor": "^3.0.1",
     "@types/cypress-cucumber-preprocessor": "^1.14.1",
     "@types/node": "^14.0.13",
-    "tsify": "^4.0.2"
+    "tsify": "^4.0.2",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^3.9.1",
